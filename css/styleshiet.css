@@ -1,0 +1,33 @@
+@media(max-width:991px){
+#hiperVinculo{
+    margin-left: 55px;
+}
+.hipervinculos{
+    color: black;
+    font-size: 1.2em;
+}
+#encabezado{
+    padding-top: 20px;
+}
+}
+@media(min-width:991px){
+    #navBar{
+        height: 8vh;
+    }
+    #hiperVinculo{
+        margin-left: 42vw;
+        margin-right: 1vw;
+    }
+    .hipervinculos{
+        color: black;
+        font-size: 1.2em;
+        margin-left: 1vw;
+    }
+    .hipervinculos:hover{
+        text-decoration: underline;
+        color:darkkhaki;
+    }
+}
+.tamano{
+    height: 10vh;
+}
