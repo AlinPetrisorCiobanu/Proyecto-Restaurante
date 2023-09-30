@@ -7,11 +7,22 @@ body{
 #divContenedor{
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/backgrouund.jpg);
-    background-repeat: no-repeat;
+    background-image: url(../img/backgrouund.jpg);
+    background-repeat: repeat;
     background-size: cover;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: scroll;
+}
+.backgroundOscuro{
+    width: 100%;
+    height: auto;
+    background-color: #1a1b1cad;
     margin: 0;
     padding: 0;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 #encaBezado{
         width: 100vw;
@@ -42,28 +53,69 @@ body{
     color: #dc3545;
     text-decoration: underline;
 }
+#tablaRepresentativa{
+    width: 100%;
+    height: 100%;
+}
+.imagenMedida{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    opacity: 90%;
+}
+.colorTextPersonalizado{
+    color:darkkhaki;
+}
 @media(max-width:430px){
+   
     #navBar{
         background-color: rgba(0, 0, 0, 0.192);
+        font-size: 0.8em;
     }
 .hipervinculos{
     color: rgb(255, 255, 255);
 }
-
+ #espaciadorvh{
+        height: 35vh;
+    }
     #rayaEncabezado{
         display: none;
-    }    
+    }  
+    .posicionTextoMediaQuery{
+        text-align: center;
+    }  
+    #footer{
+        width: 100%;
+        height: 30vh;
+    }
 }
 @media screen and (max-width: 991px) and (min-width: 430px){
+    #navBar{
+        background-color: rgba(0, 0, 0, 0.192);
+        font-size: 0.8em;
+    }
     .hipervinculos{
         color: rgb(255, 255, 255);
+    }
+    #espaciadorvh{
+        height: 30vh;
     }
         #rayaEncabezado{
             display: none;
         } 
+        .posicionTextoMediaQuery{
+            text-align: center;
+        } 
+        #footer{
+            width: 100%;
+            height: 25vh;
+        } 
 }
 
 @media(min-width:991px){
+    #espaciadorvh{
+        height: 20vh;
+    }
     #navBar{
         font-size: 1.7em;
         font-family: 'Carattere', cursive;
@@ -92,6 +144,21 @@ body{
     margin: 0 auto;
     border-radius: 100px;
   }
+  .posicionTextoMediaQuery{
+    text-align: left;
+}  
+.alRevers{
+    flex-direction: row-reverse;
+}
+#footer{
+    width: 100%;
+    height: 12vh;
+}
+}
+
+*{
+    margin-right: 0 !important;
+    padding: 0 !important;
 }
 
 
